@@ -1,0 +1,221 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400e39a9: tflite::internal::InitializeTfLiteTensorFromFlatbuffer(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, bool, tflite::Tensor const&, flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer>, unsigned long> const*, TfLiteTensor*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:222 (discriminator 1)
+[0m
+[0;33m0x40081856: panic_abort at /root/esp/idf/esp-idf/components/esp_system/panic.c:463
+0x400852d9: esp_system_abort at /root/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008a1fe: abort at /root/esp/idf/esp-idf/components/newlib/abort.c:38
+0x400e39a9: tflite::internal::InitializeTfLiteTensorFromFlatbuffer(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, bool, tflite::Tensor const&, flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer>, unsigned long> const*, TfLiteTensor*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:222 (discriminator 1)
+0x400e3cb2: tflite::MicroAllocator::PopulateTfLiteTensorFromFlatbuffer(tflite::Model const*, TfLiteTensor*, int, int, bool) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:833 (discriminator 1)
+0x400e36e1: tflite::MicroAllocator::AllocateTempTfLiteTensor(tflite::Model const*, tflite::SubgraphAllocations const*, int, int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:721
+0x40125cc7: tflite::MicroInterpreterContext::AllocateTempTfLiteTensor(int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_context.cc:54 (discriminator 1)
+0x40125ff1: tflite::MicroContext::AllocateTempOutputTensor(TfLiteNode const*, int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_context.cc:56
+0x400dd373: tflite::(anonymous namespace)::Prepare(TfLiteContext*, TfLiteNode*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:62
+0x400d81ad: tflite::MicroInterpreterGraph::PrepareSubgraphs() at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:102
+0x400d7cac: tflite::MicroInterpreter::AllocateTensors() at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:220
+0x400d7492: setup at /root/esp/tfpro/hello_world/main/main_functions.cc:107
+0x400d6a73: app_main at /root/esp/tfpro/hello_world/main/main.cc:22
+0x4012959c: main_task at /root/esp/idf/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400e39a9: tflite::internal::InitializeTfLiteTensorFromFlatbuffer(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, bool, tflite::Tensor const&, flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer>, unsigned long> const*, TfLiteTensor*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:222 (discriminator 1)
+[0m
+[0;33m0x40081856: panic_abort at /root/esp/idf/esp-idf/components/esp_system/panic.c:463
+0x400852d9: esp_system_abort at /root/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008a1fe: abort at /root/esp/idf/esp-idf/components/newlib/abort.c:38
+0x400e39a9: tflite::internal::InitializeTfLiteTensorFromFlatbuffer(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, bool, tflite::Tensor const&, flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer>, unsigned long> const*, TfLiteTensor*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:222 (discriminator 1)
+0x400e3cb2: tflite::MicroAllocator::PopulateTfLiteTensorFromFlatbuffer(tflite::Model const*, TfLiteTensor*, int, int, bool) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:833 (discriminator 1)
+0x400e36e1: tflite::MicroAllocator::AllocateTempTfLiteTensor(tflite::Model const*, tflite::SubgraphAllocations const*, int, int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:721
+0x40125cc7: tflite::MicroInterpreterContext::AllocateTempTfLiteTensor(int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_context.cc:54 (discriminator 1)
+0x40125ff1: tflite::MicroContext::AllocateTempOutputTensor(TfLiteNode const*, int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_context.cc:56
+0x400dd373: tflite::(anonymous namespace)::Prepare(TfLiteContext*, TfLiteNode*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:62
+0x400d81ad: tflite::MicroInterpreterGraph::PrepareSubgraphs() at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:102
+0x400d7cac: tflite::MicroInterpreter::AllocateTensors() at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:220
+0x400d7492: setup at /root/esp/tfpro/hello_world/main/main_functions.cc:107
+0x400d6a73: app_main at /root/esp/tfpro/hello_world/main/main.cc:22
+0x4012959c: main_task at /root/esp/idf/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400e39a9: tflite::internal::InitializeTfLiteTensorFromFlatbuffer(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, bool, tflite::Tensor const&, flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer>, unsigned long> const*, TfLiteTensor*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:222 (discriminator 1)
+[0m
+[0;33m0x40081856: panic_abort at /root/esp/idf/esp-idf/components/esp_system/panic.c:463
+0x400852d9: esp_system_abort at /root/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008a1fe: abort at /root/esp/idf/esp-idf/components/newlib/abort.c:38
+0x400e39a9: tflite::internal::InitializeTfLiteTensorFromFlatbuffer(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, bool, tflite::Tensor const&, flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer>, unsigned long> const*, TfLiteTensor*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:222 (discriminator 1)
+0x400e3cb2: tflite::MicroAllocator::PopulateTfLiteTensorFromFlatbuffer(tflite::Model const*, TfLiteTensor*, int, int, bool) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:833 (discriminator 1)
+0x400e36e1: tflite::MicroAllocator::AllocateTempTfLiteTensor(tflite::Model const*, tflite::SubgraphAllocations const*, int, int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:721
+0x40125cc7: tflite::MicroInterpreterContext::AllocateTempTfLiteTensor(int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_context.cc:54 (discriminator 1)
+0x40125ff1: tflite::MicroContext::AllocateTempOutputTensor(TfLiteNode const*, int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_context.cc:56
+0x400dd373: tflite::(anonymous namespace)::Prepare(TfLiteContext*, TfLiteNode*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:62
+0x400d81ad: tflite::MicroInterpreterGraph::PrepareSubgraphs() at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:102
+0x400d7cac: tflite::MicroInterpreter::AllocateTensors() at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:220
+0x400d7492: setup at /root/esp/tfpro/hello_world/main/main_functions.cc:107
+0x400d6a73: app_main at /root/esp/tfpro/hello_world/main/main.cc:22
+0x4012959c: main_task at /root/esp/idf/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400e39a9: tflite::internal::InitializeTfLiteTensorFromFlatbuffer(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, bool, tflite::Tensor const&, flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer>, unsigned long> const*, TfLiteTensor*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:222 (discriminator 1)
+[0m
+[0;33m0x40081856: panic_abort at /root/esp/idf/esp-idf/components/esp_system/panic.c:463
+0x400852d9: esp_system_abort at /root/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008a1fe: abort at /root/esp/idf/esp-idf/components/newlib/abort.c:38
+0x400e39a9: tflite::internal::InitializeTfLiteTensorFromFlatbuffer(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, bool, tflite::Tensor const&, flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer>, unsigned long> const*, TfLiteTensor*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:222 (discriminator 1)
+0x400e3cb2: tflite::MicroAllocator::PopulateTfLiteTensorFromFlatbuffer(tflite::Model const*, TfLiteTensor*, int, int, bool) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:833 (discriminator 1)
+0x400e36e1: tflite::MicroAllocator::AllocateTempTfLiteTensor(tflite::Model const*, tflite::SubgraphAllocations const*, int, int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:721
+0x40125cc7: tflite::MicroInterpreterContext::AllocateTempTfLiteTensor(int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_context.cc:54 (discriminator 1)
+0x40125ff1: tflite::MicroContext::AllocateTempOutputTensor(TfLiteNode const*, int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_context.cc:56
+0x400dd373: tflite::(anonymous namespace)::Prepare(TfLiteContext*, TfLiteNode*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:62
+0x400d81ad: tflite::MicroInterpreterGraph::PrepareSubgraphs() at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:102
+0x400d7cac: tflite::MicroInterpreter::AllocateTensors() at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:220
+0x400d7492: setup at /root/esp/tfpro/hello_world/main/main_functions.cc:107
+0x400d6a73: app_main at /root/esp/tfpro/hello_world/main/main.cc:22
+0x4012959c: main_task at /root/esp/idf/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400e39a9: tflite::internal::InitializeTfLiteTensorFromFlatbuffer(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, bool, tflite::Tensor const&, flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer>, unsigned long> const*, TfLiteTensor*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:222 (discriminator 1)
+[0m
+[0;33m0x40081856: panic_abort at /root/esp/idf/esp-idf/components/esp_system/panic.c:463
+0x400852d9: esp_system_abort at /root/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008a1fe: abort at /root/esp/idf/esp-idf/components/newlib/abort.c:38
+0x400e39a9: tflite::internal::InitializeTfLiteTensorFromFlatbuffer(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, bool, tflite::Tensor const&, flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer>, unsigned long> const*, TfLiteTensor*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:222 (discriminator 1)
+[0m
+[0;33m0x400e3cb2: tflite::MicroAllocator::PopulateTfLiteTensorFromFlatbuffer(tflite::Model const*, TfLiteTensor*, int, int, bool) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:833 (discriminator 1)
+[0m
+[0;33m0x40125cc7: tflite::MicroInterpreterContext::AllocateTempTfLiteTensor(int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_context.cc:54 (discriminator 1)
+[0m
+[0;33m0x40125ff1: tflite::MicroContext::AllocateTempOutputTensor(TfLiteNode const*, int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_context.cc:56
+[0m
+[0;33m0x400d81ad: tflite::MicroInterpreterGraph::PrepareSubgraphs() at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:102
+[0m
+[0;33m0x400d7cac: tflite::MicroInterpreter::AllocateTensors() at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:220
+[0m
+[0;33m0x400d6a73: app_main at /root/esp/tfpro/hello_world/main/main.cc:22
+[0m
+[0;33m0x4012959c: main_task at /root/esp/idf/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400e39a9: tflite::internal::InitializeTfLiteTensorFromFlatbuffer(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, bool, tflite::Tensor const&, flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer>, unsigned long> const*, TfLiteTensor*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:222 (discriminator 1)
+[0m
+[0;33m0x40081856: panic_abort at /root/esp/idf/esp-idf/components/esp_system/panic.c:463
+0x400852d9: esp_system_abort at /root/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008a1fe: abort at /root/esp/idf/esp-idf/components/newlib/abort.c:38
+0x400e39a9: tflite::internal::InitializeTfLiteTensorFromFlatbuffer(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, bool, tflite::Tensor const&, flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer>, unsigned long> const*, TfLiteTensor*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:222 (discriminator 1)
+0x400e3cb2: tflite::MicroAllocator::PopulateTfLiteTensorFromFlatbuffer(tflite::Model const*, TfLiteTensor*, int, int, bool) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:833 (discriminator 1)
+0x400e36e1: tflite::MicroAllocator::AllocateTempTfLiteTensor(tflite::Model const*, tflite::SubgraphAllocations const*, int, int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:721
+0x40125cc7: tflite::MicroInterpreterContext::AllocateTempTfLiteTensor(int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_context.cc:54 (discriminator 1)
+0x40125ff1: tflite::MicroContext::AllocateTempOutputTensor(TfLiteNode const*, int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_context.cc:56
+0x400dd373: tflite::(anonymous namespace)::Prepare(TfLiteContext*, TfLiteNode*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:62
+0x400d81ad: tflite::MicroInterpreterGraph::PrepareSubgraphs() at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:102
+0x400d7cac: tflite::MicroInterpreter::AllocateTensors() at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:220
+0x400d7492: setup at /root/esp/tfpro/hello_world/main/main_functions.cc:107
+0x400d6a73: app_main at /root/esp/tfpro/hello_world/main/main.cc:22
+0x4012959c: main_task at /root/esp/idf/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400e39a9: tflite::internal::InitializeTfLiteTensorFromFlatbuffer(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, bool, tflite::Tensor const&, flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer>, unsigned long> const*, TfLiteTensor*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:222 (discriminator 1)
+[0m
+[0;33m0x40081856: panic_abort at /root/esp/idf/esp-idf/components/esp_system/panic.c:463
+0x400852d9: esp_system_abort at /root/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008a1fe: abort at /root/esp/idf/esp-idf/components/newlib/abort.c:38
+0x400e39a9: tflite::internal::InitializeTfLiteTensorFromFlatbuffer(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, bool, tflite::Tensor const&, flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer>, unsigned long> const*, TfLiteTensor*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:222 (discriminator 1)
+0x400e3cb2: tflite::MicroAllocator::PopulateTfLiteTensorFromFlatbuffer(tflite::Model const*, TfLiteTensor*, int, int, bool) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:833 (discriminator 1)
+0x400e36e1: tflite::MicroAllocator::AllocateTempTfLiteTensor(tflite::Model const*, tflite::SubgraphAllocations const*, int, int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:721
+0x40125cc7: tflite::MicroInterpreterContext::AllocateTempTfLiteTensor(int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_context.cc:54 (discriminator 1)
+0x40125ff1: tflite::MicroContext::AllocateTempOutputTensor(TfLiteNode const*, int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_context.cc:56
+0x400dd373: tflite::(anonymous namespace)::Prepare(TfLiteContext*, TfLiteNode*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:62
+0x400d81ad: tflite::MicroInterpreterGraph::PrepareSubgraphs() at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:102
+0x400d7cac: tflite::MicroInterpreter::AllocateTensors() at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:220
+0x400d7492: setup at /root/esp/tfpro/hello_world/main/main_functions.cc:107
+0x400d6a73: app_main at /root/esp/tfpro/hello_world/main/main.cc:22
+0x4012959c: main_task at /root/esp/idf/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400e39a9: tflite::internal::InitializeTfLiteTensorFromFlatbuffer(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, bool, tflite::Tensor const&, flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer>, unsigned long> const*, TfLiteTensor*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:222 (discriminator 1)
+[0m
+[0;33m0x40081856: panic_abort at /root/esp/idf/esp-idf/components/esp_system/panic.c:463
+0x400852d9: esp_system_abort at /root/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008a1fe: abort at /root/esp/idf/esp-idf/components/newlib/abort.c:38
+0x400e39a9: tflite::internal::InitializeTfLiteTensorFromFlatbuffer(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, bool, tflite::Tensor const&, flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer>, unsigned long> const*, TfLiteTensor*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:222 (discriminator 1)
+0x400e3cb2: tflite::MicroAllocator::PopulateTfLiteTensorFromFlatbuffer(tflite::Model const*, TfLiteTensor*, int, int, bool) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:833 (discriminator 1)
+0x400e36e1: tflite::MicroAllocator::AllocateTempTfLiteTensor(tflite::Model const*, tflite::SubgraphAllocations const*, int, int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:721
+0x40125cc7: tflite::MicroInterpreterContext::AllocateTempTfLiteTensor(int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_context.cc:54 (discriminator 1)
+0x40125ff1: tflite::MicroContext::AllocateTempOutputTensor(TfLiteNode const*, int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_context.cc:56
+0x400dd373: tflite::(anonymous namespace)::Prepare(TfLiteContext*, TfLiteNode*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:62
+0x400d81ad: tflite::MicroInterpreterGraph::PrepareSubgraphs() at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:102
+0x400d7cac: tflite::MicroInterpreter::AllocateTensors() at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:220
+0x400d7492: setup at /root/esp/tfpro/hello_world/main/main_functions.cc:107
+0x400d6a73: app_main at /root/esp/tfpro/hello_world/main/main.cc:22
+0x4012959c: main_task at /root/esp/idf/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400e39a9: tflite::internal::InitializeTfLiteTensorFromFlatbuffer(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, bool, tflite::Tensor const&, flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer>, unsigned long> const*, TfLiteTensor*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:222 (discriminator 1)
+[0m
+[0;33m0x40081856: panic_abort at /root/esp/idf/esp-idf/components/esp_system/panic.c:463
+0x400852d9: esp_system_abort at /root/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008a1fe: abort at /root/esp/idf/esp-idf/components/newlib/abort.c:38
+0x400e39a9: tflite::internal::InitializeTfLiteTensorFromFlatbuffer(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, bool, tflite::Tensor const&, flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer>, unsigned long> const*, TfLiteTensor*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:222 (discriminator 1)
+0x400e3cb2: tflite::MicroAllocator::PopulateTfLiteTensorFromFlatbuffer(tflite::Model const*, TfLiteTensor*, int, int, bool) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:833 (discriminator 1)
+0x400e36e1: tflite::MicroAllocator::AllocateTempTfLiteTensor(tflite::Model const*, tflite::SubgraphAllocations const*, int, int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:721
+0x40125cc7: tflite::MicroInterpreterContext::AllocateTempTfLiteTensor(int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_context.cc:54 (discriminator 1)
+0x40125ff1: tflite::MicroContext::AllocateTempOutputTensor(TfLiteNode const*, int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_context.cc:56
+0x400dd373: tflite::(anonymous namespace)::Prepare(TfLiteContext*, TfLiteNode*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:62
+0x400d81ad: tflite::MicroInterpreterGraph::PrepareSubgraphs() at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:102
+0x400d7cac: tflite::MicroInterpreter::AllocateTensors() at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:220
+0x400d7492: setup at /root/esp/tfpro/hello_world/main/main_functions.cc:107
+0x400d6a73: app_main at /root/esp/tfpro/hello_world/main/main.cc:22
+0x4012959c: main_task at /root/esp/idf/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400e39a9: tflite::internal::InitializeTfLiteTensorFromFlatbuffer(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, bool, tflite::Tensor const&, flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer>, unsigned long> const*, TfLiteTensor*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:222 (discriminator 1)
+[0m
+[0;33m0x40081856: panic_abort at /root/esp/idf/esp-idf/components/esp_system/panic.c:463
+0x400852d9: esp_system_abort at /root/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008a1fe: abort at /root/esp/idf/esp-idf/components/newlib/abort.c:38
+0x400e39a9: tflite::internal::InitializeTfLiteTensorFromFlatbuffer(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, bool, tflite::Tensor const&, flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer>, unsigned long> const*, TfLiteTensor*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:222 (discriminator 1)
+0x400e3cb2: tflite::MicroAllocator::PopulateTfLiteTensorFromFlatbuffer(tflite::Model const*, TfLiteTensor*, int, int, bool) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:833 (discriminator 1)
+0x400e36e1: tflite::MicroAllocator::AllocateTempTfLiteTensor(tflite::Model const*, tflite::SubgraphAllocations const*, int, int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:721
+0x40125cc7: tflite::MicroInterpreterContext::AllocateTempTfLiteTensor(int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_context.cc:54 (discriminator 1)
+0x40125ff1: tflite::MicroContext::AllocateTempOutputTensor(TfLiteNode const*, int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_context.cc:56
+0x400dd373: tflite::(anonymous namespace)::Prepare(TfLiteContext*, TfLiteNode*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/kernels/esp_nn/conv.cc:62
+0x400d81ad: tflite::MicroInterpreterGraph::PrepareSubgraphs() at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:102
+0x400d7cac: tflite::MicroInterpreter::AllocateTensors() at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:220
+0x400d7492: setup at /root/esp/tfpro/hello_world/main/main_functions.cc:107
+0x400d6a73: app_main at /root/esp/tfpro/hello_world/main/main.cc:22
+0x4012959c: main_task at /root/esp/idf/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400e39a9: tflite::internal::InitializeTfLiteTensorFromFlatbuffer(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, bool, tflite::Tensor const&, flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer>, unsigned long> const*, TfLiteTensor*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:222 (discriminator 1)
+[0m
+[0;33m0x40081856: panic_abort at /root/esp/idf/esp-idf/components/esp_system/panic.c:463
+0x400852d9: esp_system_abort at /root/esp/idf/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008a1fe: abort at /root/esp/idf/esp-idf/components/newlib/abort.c:38
+0x400e39a9: tflite::internal::InitializeTfLiteTensorFromFlatbuffer(tflite::IPersistentBufferAllocator*, tflite::INonPersistentBufferAllocator*, bool, tflite::Tensor const&, flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer>, unsigned long> const*, TfLiteTensor*) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:222 (discriminator 1)
+0x400e3cb2: tflite::MicroAllocator::PopulateTfLiteTensorFromFlatbuffer(tflite::Model const*, TfLiteTensor*, int, int, bool) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:833 (discriminator 1)
+0x400e36e1: tflite::MicroAllocator::AllocateTempTfLiteTensor(tflite::Model const*, tflite::SubgraphAllocations const*, int, int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_allocator.cc:721
+0x40125cc7: tflite::MicroInterpreterContext::AllocateTempTfLiteTensor(int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_context.cc:54 (discriminator 1)
+[0m
+[0;33m0x40125ff1: tflite::MicroContext::AllocateTempOutputTensor(TfLiteNode const*, int) at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_context.cc:56
+[0m
+[0;33m0x400d81ad: tflite::MicroInterpreterGraph::PrepareSubgraphs() at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.cc:102
+[0m
+[0;33m0x400d7cac: tflite::MicroInterpreter::AllocateTensors() at /root/esp/tfpro/hello_world/managed_components/espressif__esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.cc:220
+[0m
+[0;33m0x400d6a73: app_main at /root/esp/tfpro/hello_world/main/main.cc:22
+[0m
+[0;33m0x4012959c: main_task at /root/esp/idf/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

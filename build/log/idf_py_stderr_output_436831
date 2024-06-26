@@ -1,0 +1,126 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d59d6: loop at /root/esp/tfpro/hello_world/main/main_functions.cc:87
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d59d3: loop at /root/esp/tfpro/hello_world/main/main_functions.cc:87
+0x400d57dd: app_main at /root/esp/tfpro/hello_world/main/main.cc:24
+0x400e6f01: main_task at /root/esp/idf/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d59d6: loop at /root/esp/tfpro/hello_world/main/main_functions.cc:87
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d59d3: loop at /root/esp/tfpro/hello_world/main/main_functions.cc:87
+0x400d57dd: app_main at /root/esp/tfpro/hello_world/main/main.cc:24
+0x400e6f01: main_task at /root/esp/idf/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d59d6: loop at /root/esp/tfpro/hello_world/main/main_functions.cc:87
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d59d3: loop at /root/esp/tfpro/hello_world/main/main_functions.cc:87
+0x400d57dd: app_main at /root/esp/tfpro/hello_world/main/main.cc:24
+0x400e6f01: main_task at /root/esp/idf/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d59d6: loop at /root/esp/tfpro/hello_world/main/main_functions.cc:87
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d59d3: loop at /root/esp/tfpro/hello_world/main/main_functions.cc:87
+0x400d57dd: app_main at /root/esp/tfpro/hello_world/main/main.cc:24
+0x400e6f01: main_task at /root/esp/idf/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d59d6: loop at /root/esp/tfpro/hello_world/main/main_functions.cc:87
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d59d3: loop at /root/esp/tfpro/hello_world/main/main_functions.cc:87
+0x400d57dd: app_main at /root/esp/tfpro/hello_world/main/main.cc:24
+0x400e6f01: main_task at /root/esp/idf/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d59d6: loop at /root/esp/tfpro/hello_world/main/main_functions.cc:87
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d59d3: loop at /root/esp/tfpro/hello_world/main/main_functions.cc:87
+0x400d57dd: app_main at /root/esp/tfpro/hello_world/main/main.cc:24
+0x400e6f01: main_task at /root/esp/idf/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d59d6: loop at /root/esp/tfpro/hello_world/main/main_functions.cc:87
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d59d3: loop at /root/esp/tfpro/hello_world/main/main_functions.cc:87
+0x400d57dd: app_main at /root/esp/tfpro/hello_world/main/main.cc:24
+0x400e6f01: main_task at /root/esp/idf/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d59d6: loop at /root/esp/tfpro/hello_world/main/main_functions.cc:87
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d59d3: loop at /root/esp/tfpro/hello_world/main/main_functions.cc:87
+0x400d57dd: app_main at /root/esp/tfpro/hello_world/main/main.cc:24
+0x400e6f01: main_task at /root/esp/idf/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d59d6: loop at /root/esp/tfpro/hello_world/main/main_functions.cc:87
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d59d3: loop at /root/esp/tfpro/hello_world/main/main_functions.cc:87
+0x400d57dd: app_main at /root/esp/tfpro/hello_world/main/main.cc:24
+0x400e6f01: main_task at /root/esp/idf/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d59d6: loop at /root/esp/tfpro/hello_world/main/main_functions.cc:87
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d59d3: loop at /root/esp/tfpro/hello_world/main/main_functions.cc:87
+0x400d57dd: app_main at /root/esp/tfpro/hello_world/main/main.cc:24
+0x400e6f01: main_task at /root/esp/idf/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d59d6: loop at /root/esp/tfpro/hello_world/main/main_functions.cc:87
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d59d3: loop at /root/esp/tfpro/hello_world/main/main_functions.cc:87
+0x400d57dd: app_main at /root/esp/tfpro/hello_world/main/main.cc:24
+0x400e6f01: main_task at /root/esp/idf/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

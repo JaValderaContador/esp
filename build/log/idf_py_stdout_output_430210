@@ -1,0 +1,112 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7524
+load:0x40078000,len:16552
+load:0x40080400,len:4
+load:0x40080404,len:4312
+entry 0x4008065c
+[0;32mI (29) boot: ESP-IDF v5.3-dev-2815-gbe06a6f5ff 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jun 26 2024 01:37:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (44) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (49) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (53) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (58) boot: Enabling RNG early entropy source...[0m
+[0;32mI (63) boot: Partition Table:[0m
+[0;32mI (67) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (74) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (82) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (89) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf00h ( 48896) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001bf28 vaddr=3ffb0000 size=020bch (  8380) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001dfec vaddr=40080000 size=0202ch (  8236) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17510h ( 95504) map[0m
+[0;32mI (162) esp_image: segment 4: paddr=00037538 vaddr=4008202c size=095f8h ( 38392) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) cpu_start: Multicore app[0m
+[0;32mI (199) cpu_start: Pro cpu start user code[0m
+[0;32mI (199) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (199) app_init: Application information:[0m
+[0;32mI (202) app_init: Project name:     hello_world[0m
+[0;32mI (207) app_init: App version:      1[0m
+[0;32mI (212) app_init: Compile time:     Jun 26 2024 01:36:58[0m
+[0;32mI (218) app_init: ELF file SHA256:  142c6e84b...[0m
+[0;32mI (223) app_init: ESP-IDF:          v5.3-dev-2815-gbe06a6f5ff[0m
+[0;32mI (229) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (234) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (239) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (244) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (251) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (257) heap_init: At 3FFB32E0 len 0002CD20 (179 KiB): DRAM[0m
+[0;32mI (263) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (270) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (276) heap_init: At 4008B624 len 000149DC (82 KiB): IRAM[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: qio[0m
+[0;33mW (291) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (304) main_task: Started on CPU0[0m
+[0;32mI (314) main_task: Calling app_main()[0m
+x_value: 0.000000, y_value: 0.000000
+x_value: 0.314159, y_value: 0.372770
+x_value: 0.628319, y_value: 0.559154
+x_value: 0.942478, y_value: 0.838731
+x_value: 1.256637, y_value: 0.965812
+x_value: 1.570796, y_value: 1.042060
+x_value: 1.884956, y_value: 0.957340
+x_value: 2.199115, y_value: 0.821787
+x_value: 2.513274, y_value: 0.533738
+x_value: 2.827433, y_value: 0.237217
+x_value: 3.141593, y_value: 0.008472
+x_value: 3.455752, y_value: -0.304993
+x_value: 3.769912, y_value: -0.533738
+x_value: 4.084070, y_value: -0.779427
+x_value: 4.398230, y_value: -0.965812
+x_value: 4.712389, y_value: -1.109837
+x_value: 5.026548, y_value: -0.982756
+x_value: 5.340708, y_value: -0.745539
+x_value: 5.654867, y_value: -0.533738
+x_value: 5.969026, y_value: -0.355825
+x_value: 0.000000, y_value: 0.000000
+x_value: 0.314159, y_value: 0.372770
+x_value: 0.628319, y_value: 0.559154
+x_value: 0.942478, y_value: 0.838731
+x_value: 1.256637, y_value: 0.965812
+x_value: 1.570796, y_value: 1.042060
+x_value: 1.884956, y_value: 0.957340
+x_value: 2.199115, y_value: 0.821787
+x_value: 2.513274, y_value: 0.533738
+x_value: 2.827433, y_value: 0.237217
+x_value: 3.141593, y_value: 0.008472
+x_value: 3.455752, y_value: -0.304993
+x_value: 3.769912, y_value: -0.533738
+x_value: 4.084070, y_value: -0.779427
+x_value: 4.398230, y_value: -0.965812
+x_value: 4.712389, y_value: -1.109837
+x_value: 5.026548, y_value: -0.982756
+x_value: 5.340708, y_value: -0.745539
+x_value: 5.654867, y_value: -0.533738
+x_value: 5.969026, y_value: -0.355825
+x_value: 0.000000, y_value: 0.000000
+x_value: 0.314159, y_value: 0.372770
+x_value: 0.628319, y_value: 0.559154
+x_value: 0.942478, y_value: 0.838731
+x_value: 1.256637, y_value: 0.965812
+x_value: 1.570796, y_value: 1.042060
+x_value: 1.884956, y_value: 0.957340
+x_value: 2.199115, y_value: 0.821787
+x_value: 2.513274, y_value: 0.533738
+x_value: 2.827433, y_value: 0.237217
+x_value: 3.141593, y_value: 0.008472
+x_value: 3.455752, y_value: -0.304993
+x_value: 3.769912, y_value: -0.533738
+x_value: 4.084070, y_value: -0.779427
+x_value: 4.398230, y_value: -0.965812
+x_value: 4.712389, y_value: -1.109837

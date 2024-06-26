@@ -1,0 +1,906 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7524
+load:0x40078000,len:16552
+load:0x40080400,len:4
+load:0x40080404,len:4312
+entry 0x4008065c
+[0;32mI (29) boot: ESP-IDF v5.3-dev-2815-gbe06a6f5ff 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jun 26 2024 01:37:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (44) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (49) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (53) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (58) boot: Enabling RNG early entropy source...[0m
+[0;32mI (63) boot: Partition Table:[0m
+[0;32mI (67) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (74) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (82) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (89) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=96d78h (617848) map[0m
+[0;32mI (268) esp_image: segment 1: paddr=000a6da0 vaddr=3ffb0000 size=021cch (  8652) load[0m
+[0;32mI (271) esp_image: segment 2: paddr=000a8f74 vaddr=40080000 size=070a4h ( 28836) load[0m
+[0;32mI (282) esp_image: segment 3: paddr=000b0020 vaddr=400d0020 size=59bech (367596) map[0m
+[0;32mI (377) esp_image: segment 4: paddr=00109c14 vaddr=400870a4 size=04760h ( 18272) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (408) cpu_start: Pro cpu start user code[0m
+[0;32mI (408) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (408) app_init: Application information:[0m
+[0;32mI (411) app_init: Project name:     hello_world[0m
+[0;32mI (417) app_init: App version:      1[0m
+[0;32mI (421) app_init: Compile time:     Jun 26 2024 01:36:58[0m
+[0;32mI (427) app_init: ELF file SHA256:  f36d466da...[0m
+[0;32mI (432) app_init: ESP-IDF:          v5.3-dev-2815-gbe06a6f5ff[0m
+[0;32mI (439) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (443) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (448) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (453) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (460) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (466) heap_init: At 3FFB4BD8 len 0002B428 (173 KiB): DRAM[0m
+[0;32mI (473) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (479) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (485) heap_init: At 4008B804 len 000147FC (81 KiB): IRAM[0m
+[0;32mI (492) spi_flash: detected chip: generic[0m
+[0;32mI (496) spi_flash: flash io: qio[0m
+[0;33mW (500) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (515) main_task: Started on CPU0[0m
+[0;32mI (525) main_task: Calling app_main()[0m
+Failed to allocate tail memory. Requested: 32, available 0, missing: 32
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 64, available 0, missing: 64
+Failed to allocate temp memory. Requested: 40, available 0, missing: 40
+
+abort() was called at PC 0x400e39a9 on core 0
+
+
+Backtrace: 0x40081856:0x3ffb5a40 0x400852d9:0x3ffb5a60 0x4008a1fe:0x3ffb5a80 0x400e39a9:0x3ffb5af0 0x400e3cb2:0x3ffb5b30 0x400e36e1:0x3ffb5b50 0x40125cc7:0x3ffb5b70 0x40125ff1:0x3ffb5b90 0x400dd373:0x3ffb5bb0 0x400d81ad:0x3ffb5c90 0x400d7cac:0x3ffb5cc0 0x400d7492:0x3ffb5cf0 0x400d6a73:0x3ffb5ee0 0x4012959c:0x3ffb5f00
+
+
+
+
+ELF file SHA256: f36d466da
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7524
+load:0x40078000,len:16552
+load:0x40080400,len:4
+load:0x40080404,len:4312
+entry 0x4008065c
+[0;32mI (29) boot: ESP-IDF v5.3-dev-2815-gbe06a6f5ff 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jun 26 2024 01:37:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (44) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (49) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (53) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (58) boot: Enabling RNG early entropy source...[0m
+[0;32mI (63) boot: Partition Table:[0m
+[0;32mI (67) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (74) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (82) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (89) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=96d78h (617848) map[0m
+[0;32mI (268) esp_image: segment 1: paddr=000a6da0 vaddr=3ffb0000 size=021cch (  8652) load[0m
+[0;32mI (270) esp_image: segment 2: paddr=000a8f74 vaddr=40080000 size=070a4h ( 28836) load[0m
+[0;32mI (282) esp_image: segment 3: paddr=000b0020 vaddr=400d0020 size=59bech (367596) map[0m
+[0;32mI (377) esp_image: segment 4: paddr=00109c14 vaddr=400870a4 size=04760h ( 18272) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (408) cpu_start: Pro cpu start user code[0m
+[0;32mI (408) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (408) app_init: Application information:[0m
+[0;32mI (411) app_init: Project name:     hello_world[0m
+[0;32mI (417) app_init: App version:      1[0m
+[0;32mI (421) app_init: Compile time:     Jun 26 2024 01:36:58[0m
+[0;32mI (427) app_init: ELF file SHA256:  f36d466da...[0m
+[0;32mI (432) app_init: ESP-IDF:          v5.3-dev-2815-gbe06a6f5ff[0m
+[0;32mI (439) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (443) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (448) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (453) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (460) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (466) heap_init: At 3FFB4BD8 len 0002B428 (173 KiB): DRAM[0m
+[0;32mI (473) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (479) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (485) heap_init: At 4008B804 len 000147FC (81 KiB): IRAM[0m
+[0;32mI (492) spi_flash: detected chip: generic[0m
+[0;32mI (496) spi_flash: flash io: qio[0m
+[0;33mW (500) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (515) main_task: Started on CPU0[0m
+[0;32mI (525) main_task: Calling app_main()[0m
+Failed to allocate tail memory. Requested: 32, available 0, missing: 32
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 64, available 0, missing: 64
+Failed to allocate temp memory. Requested: 40, available 0, missing: 40
+
+abort() was called at PC 0x400e39a9 on core 0
+
+
+Backtrace: 0x40081856:0x3ffb5a40 0x400852d9:0x3ffb5a60 0x4008a1fe:0x3ffb5a80 0x400e39a9:0x3ffb5af0 0x400e3cb2:0x3ffb5b30 0x400e36e1:0x3ffb5b50 0x40125cc7:0x3ffb5b70 0x40125ff1:0x3ffb5b90 0x400dd373:0x3ffb5bb0 0x400d81ad:0x3ffb5c90 0x400d7cac:0x3ffb5cc0 0x400d7492:0x3ffb5cf0 0x400d6a73:0x3ffb5ee0 0x4012959c:0x3ffb5f00
+
+
+
+
+ELF file SHA256: f36d466da
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7524
+load:0x40078000,len:16552
+load:0x40080400,len:4
+load:0x40080404,len:4312
+entry 0x4008065c
+[0;32mI (29) boot: ESP-IDF v5.3-dev-2815-gbe06a6f5ff 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jun 26 2024 01:37:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (44) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (49) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (53) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (58) boot: Enabling RNG early entropy source...[0m
+[0;32mI (63) boot: Partition Table:[0m
+[0;32mI (67) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (74) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (82) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (89) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=96d78h (617848) map[0m
+[0;32mI (268) esp_image: segment 1: paddr=000a6da0 vaddr=3ffb0000 size=021cch (  8652) load[0m
+[0;32mI (270) esp_image: segment 2: paddr=000a8f74 vaddr=40080000 size=070a4h ( 28836) load[0m
+[0;32mI (282) esp_image: segment 3: paddr=000b0020 vaddr=400d0020 size=59bech (367596) map[0m
+[0;32mI (377) esp_image: segment 4: paddr=00109c14 vaddr=400870a4 size=04760h ( 18272) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (408) cpu_start: Pro cpu start user code[0m
+[0;32mI (408) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (408) app_init: Application information:[0m
+[0;32mI (411) app_init: Project name:     hello_world[0m
+[0;32mI (417) app_init: App version:      1[0m
+[0;32mI (421) app_init: Compile time:     Jun 26 2024 01:36:58[0m
+[0;32mI (427) app_init: ELF file SHA256:  f36d466da...[0m
+[0;32mI (432) app_init: ESP-IDF:          v5.3-dev-2815-gbe06a6f5ff[0m
+[0;32mI (439) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (443) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (448) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (453) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (460) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (466) heap_init: At 3FFB4BD8 len 0002B428 (173 KiB): DRAM[0m
+[0;32mI (473) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (479) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (485) heap_init: At 4008B804 len 000147FC (81 KiB): IRAM[0m
+[0;32mI (492) spi_flash: detected chip: generic[0m
+[0;32mI (496) spi_flash: flash io: qio[0m
+[0;33mW (500) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (515) main_task: Started on CPU0[0m
+[0;32mI (525) main_task: Calling app_main()[0m
+Failed to allocate tail memory. Requested: 32, available 0, missing: 32
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 64, available 0, missing: 64
+Failed to allocate temp memory. Requested: 40, available 0, missing: 40
+
+abort() was called at PC 0x400e39a9 on core 0
+
+
+Backtrace: 0x40081856:0x3ffb5a40 0x400852d9:0x3ffb5a60 0x4008a1fe:0x3ffb5a80 0x400e39a9:0x3ffb5af0 0x400e3cb2:0x3ffb5b30 0x400e36e1:0x3ffb5b50 0x40125cc7:0x3ffb5b70 0x40125ff1:0x3ffb5b90 0x400dd373:0x3ffb5bb0 0x400d81ad:0x3ffb5c90 0x400d7cac:0x3ffb5cc0 0x400d7492:0x3ffb5cf0 0x400d6a73:0x3ffb5ee0 0x4012959c:0x3ffb5f00
+
+
+
+
+ELF file SHA256: f36d466da
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7524
+load:0x40078000,len:16552
+load:0x40080400,len:4
+load:0x40080404,len:4312
+entry 0x4008065c
+[0;32mI (29) boot: ESP-IDF v5.3-dev-2815-gbe06a6f5ff 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jun 26 2024 01:37:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (44) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (49) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (53) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (58) boot: Enabling RNG early entropy source...[0m
+[0;32mI (63) boot: Partition Table:[0m
+[0;32mI (67) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (74) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (82) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (89) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=96d78h (617848) map[0m
+[0;32mI (268) esp_image: segment 1: paddr=000a6da0 vaddr=3ffb0000 size=021cch (  8652) load[0m
+[0;32mI (270) esp_image: segment 2: paddr=000a8f74 vaddr=40080000 size=070a4h ( 28836) load[0m
+[0;32mI (282) esp_image: segment 3: paddr=000b0020 vaddr=400d0020 size=59bech (367596) map[0m
+[0;32mI (377) esp_image: segment 4: paddr=00109c14 vaddr=400870a4 size=04760h ( 18272) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (408) cpu_start: Pro cpu start user code[0m
+[0;32mI (408) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (408) app_init: Application information:[0m
+[0;32mI (411) app_init: Project name:     hello_world[0m
+[0;32mI (417) app_init: App version:      1[0m
+[0;32mI (421) app_init: Compile time:     Jun 26 2024 01:36:58[0m
+[0;32mI (427) app_init: ELF file SHA256:  f36d466da...[0m
+[0;32mI (432) app_init: ESP-IDF:          v5.3-dev-2815-gbe06a6f5ff[0m
+[0;32mI (439) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (443) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (448) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (453) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (460) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (466) heap_init: At 3FFB4BD8 len 0002B428 (173 KiB): DRAM[0m
+[0;32mI (473) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (479) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (485) heap_init: At 4008B804 len 000147FC (81 KiB): IRAM[0m
+[0;32mI (492) spi_flash: detected chip: generic[0m
+[0;32mI (496) spi_flash: flash io: qio[0m
+[0;33mW (500) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (515) main_task: Started on CPU0[0m
+[0;32mI (525) main_task: Calling app_main()[0m
+Failed to allocate tail memory. Requested: 32, available 0, missing: 32
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 64, available 0, missing: 64
+Failed to allocate temp memory. Requested: 40, available 0, missing: 40
+
+abort() was called at PC 0x400e39a9 on core 0
+
+
+Backtrace: 0x40081856:0x3ffb5a40 0x400852d9:0x3ffb5a60 0x4008a1fe:0x3ffb5a80 0x400e39a9:0x3ffb5af0 0x400e3cb2:0x3ffb5b30 0x400e36e1:0x3ffb5b50 0x40125cc7:0x3ffb5b70 0x40125ff1:0x3ffb5b90 0x400dd373:0x3ffb5bb0 0x400d81ad:0x3ffb5c90 0x400d7cac:0x3ffb5cc0 0x400d7492:0x3ffb5cf0 0x400d6a73:0x3ffb5ee0 0x4012959c:0x3ffb5f00
+
+
+
+
+ELF file SHA256: f36d466da
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7524
+load:0x40078000,len:16552
+load:0x40080400,len:4
+load:0x40080404,len:4312
+entry 0x4008065c
+[0;32mI (29) boot: ESP-IDF v5.3-dev-2815-gbe06a6f5ff 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jun 26 2024 01:37:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (44) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (49) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (53) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (58) boot: Enabling RNG early entropy source...[0m
+[0;32mI (63) boot: Partition Table:[0m
+[0;32mI (67) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (74) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (82) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (89) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=96d78h (617848) map[0m
+[0;32mI (268) esp_image: segment 1: paddr=000a6da0 vaddr=3ffb0000 size=021cch (  8652) load[0m
+[0;32mI (270) esp_image: segment 2: paddr=000a8f74 vaddr=40080000 size=070a4h ( 28836) load[0m
+[0;32mI (282) esp_image: segment 3: paddr=000b0020 vaddr=400d0020 size=59bech (367596) map[0m
+[0;32mI (377) esp_image: segment 4: paddr=00109c14 vaddr=400870a4 size=04760h ( 18272) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (408) cpu_start: Pro cpu start user code[0m
+[0;32mI (408) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (408) app_init: Application information:[0m
+[0;32mI (411) app_init: Project name:     hello_world[0m
+[0;32mI (417) app_init: App version:      1[0m
+[0;32mI (421) app_init: Compile time:     Jun 26 2024 01:36:58[0m
+[0;32mI (427) app_init: ELF file SHA256:  f36d466da...[0m
+[0;32mI (432) app_init: ESP-IDF:          v5.3-dev-2815-gbe06a6f5ff[0m
+[0;32mI (439) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (443) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (448) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (453) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (460) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (466) heap_init: At 3FFB4BD8 len 0002B428 (173 KiB): DRAM[0m
+[0;32mI (473) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (479) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (485) heap_init: At 4008B804 len 000147FC (81 KiB): IRAM[0m
+[0;32mI (492) spi_flash: detected chip: generic[0m
+[0;32mI (496) spi_flash: flash io: qio[0m
+[0;33mW (500) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (515) main_task: Started on CPU0[0m
+[0;32mI (525) main_task: Calling app_main()[0m
+Failed to allocate tail memory. Requested: 32, available 0, missing: 32
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 64, available 0, missing: 64
+Failed to allocate temp memory. Requested: 40, available 0, missing: 40
+
+abort() was called at PC 0x400e39a9 on core 0
+
+
+Backtrace: 0x40081856:0x3ffb5a40 0x400852d9:0x3ffb5a60 0x4008a1fe:0x3ffb5a80 0x400e39a9:0x3ffb5af0 0x400e3cb2:0x3ffb5b30 0x400e36e1:0x3ffb5b50 0x40125cc7:0x3ffb5b70 0x40125ff1:0x3ffb5b90 0x400dd373:0x3ffb5bb0 0x400d81ad:0x3ffb5c90 0x400d7cac:0x3ffb5cc0 0x400d7492:0x3ffb5cf0 0x400d6a73:0x3ffb5ee0 0x4012959c:0x3ffb5f00
+
+
+
+
+ELF file SHA256: f36d466da
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7524
+load:0x40078000,len:16552
+load:0x40080400,len:4
+load:0x40080404,len:4312
+entry 0x4008065c
+[0;32mI (29) boot: ESP-IDF v5.3-dev-2815-gbe06a6f5ff 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jun 26 2024 01:37:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (44) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (49) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (53) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (58) boot: Enabling RNG early entropy source...[0m
+[0;32mI (63) boot: Partition Table:[0m
+[0;32mI (67) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (74) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (82) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (89) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=96d78h (617848) map[0m
+[0;32mI (268) esp_image: segment 1: paddr=000a6da0 vaddr=3ffb0000 size=021cch (  8652) load[0m
+[0;32mI (270) esp_image: segment 2: paddr=000a8f74 vaddr=40080000 size=070a4h ( 28836) load[0m
+[0;32mI (282) esp_image: segment 3: paddr=000b0020 vaddr=400d0020 size=59bech (367596) map[0m
+[0;32mI (377) esp_image: segment 4: paddr=00109c14 vaddr=400870a4 size=04760h ( 18272) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (408) cpu_start: Pro cpu start user code[0m
+[0;32mI (408) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (408) app_init: Application information:[0m
+[0;32mI (411) app_init: Project name:     hello_world[0m
+[0;32mI (417) app_init: App version:      1[0m
+[0;32mI (421) app_init: Compile time:     Jun 26 2024 01:36:58[0m
+[0;32mI (427) app_init: ELF file SHA256:  f36d466da...[0m
+[0;32mI (432) app_init: ESP-IDF:          v5.3-dev-2815-gbe06a6f5ff[0m
+[0;32mI (439) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (443) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (448) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (453) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (460) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (466) heap_init: At 3FFB4BD8 len 0002B428 (173 KiB): DRAM[0m
+[0;32mI (473) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (479) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (485) heap_init: At 4008B804 len 000147FC (81 KiB): IRAM[0m
+[0;32mI (492) spi_flash: detected chip: generic[0m
+[0;32mI (496) spi_flash: flash io: qio[0m
+[0;33mW (500) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (515) main_task: Started on CPU0[0m
+[0;32mI (525) main_task: Calling app_main()[0m
+Failed to allocate tail memory. Requested: 32, available 0, missing: 32
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 64, available 0, missing: 64
+Failed to allocate temp memory. Requested: 40, available 0, missing: 40
+
+abort() was called at PC 0x400e39a9 on core 0
+
+
+Backtrace: 0x40081856:0x3ffb5a40 0x400852d9:0x3ffb5a60 0x4008a1fe:0x3ffb5a80 0x400e39a9:0x3ffb5af0 0x400e3cb2:0x3ffb5b30 0x400e36e1:0x3ffb5b50 0x40125cc7:0x3ffb5b70 0x40125ff1:0x3ffb5b90 0x400dd373:0x3ffb5bb0 0x400d81ad:0x3ffb5c90 0x400d7cac:0x3ffb5cc0 0x400d7492:0x3ffb5cf0 0x400d6a73:0x3ffb5ee0 0x4012959c:0x3ffb5f00
+
+
+
+
+ELF file SHA256: f36d466da
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7524
+load:0x40078000,len:16552
+load:0x40080400,len:4
+load:0x40080404,len:4312
+entry 0x4008065c
+[0;32mI (29) boot: ESP-IDF v5.3-dev-2815-gbe06a6f5ff 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jun 26 2024 01:37:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (44) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (49) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (53) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (58) boot: Enabling RNG early entropy source...[0m
+[0;32mI (63) boot: Partition Table:[0m
+[0;32mI (67) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (74) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (82) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (89) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=96d78h (617848) map[0m
+[0;32mI (268) esp_image: segment 1: paddr=000a6da0 vaddr=3ffb0000 size=021cch (  8652) load[0m
+[0;32mI (270) esp_image: segment 2: paddr=000a8f74 vaddr=40080000 size=070a4h ( 28836) load[0m
+[0;32mI (282) esp_image: segment 3: paddr=000b0020 vaddr=400d0020 size=59bech (367596) map[0m
+[0;32mI (377) esp_image: segment 4: paddr=00109c14 vaddr=400870a4 size=04760h ( 18272) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (408) cpu_start: Pro cpu start user code[0m
+[0;32mI (408) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (408) app_init: Application information:[0m
+[0;32mI (411) app_init: Project name:     hello_world[0m
+[0;32mI (417) app_init: App version:      1[0m
+[0;32mI (421) app_init: Compile time:     Jun 26 2024 01:36:58[0m
+[0;32mI (427) app_init: ELF file SHA256:  f36d466da...[0m
+[0;32mI (432) app_init: ESP-IDF:          v5.3-dev-2815-gbe06a6f5ff[0m
+[0;32mI (439) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (443) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (448) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (453) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (460) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (466) heap_init: At 3FFB4BD8 len 0002B428 (173 KiB): DRAM[0m
+[0;32mI (473) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (479) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (485) heap_init: At 4008B804 len 000147FC (81 KiB): IRAM[0m
+[0;32mI (492) spi_flash: detected chip: generic[0m
+[0;32mI (496) spi_flash: flash io: qio[0m
+[0;33mW (500) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (515) main_task: Started on CPU0[0m
+[0;32mI (525) main_task: Calling app_main()[0m
+Failed to allocate tail memory. Requested: 32, available 0, missing: 32
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 64, available 0, missing: 64
+Failed to allocate temp memory. Requested: 40, available 0, missing: 40
+
+abort() was called at PC 0x400e39a9 on core 0
+
+
+Backtrace: 0x40081856:0x3ffb5a40 0x400852d9:0x3ffb5a60 0x4008a1fe:0x3ffb5a80 0x400e39a9:0x3ffb5af0 0x400e3cb2:0x3ffb5b30 0x400e36e1:0x3ffb5b50 0x40125cc7:0x3ffb5b70 0x40125ff1:0x3ffb5b90 0x400dd373:0x3ffb5bb0 0x400d81ad:0x3ffb5c90 0x400d7cac:0x3ffb5cc0 0x400d7492:0x3ffb5cf0 0x400d6a73:0x3ffb5ee0 0x4012959c:0x3ffb5f00
+
+
+
+
+ELF file SHA256: f36d466da
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7524
+load:0x40078000,len:16552
+load:0x40080400,len:4
+load:0x40080404,len:4312
+entry 0x4008065c
+[0;32mI (29) boot: ESP-IDF v5.3-dev-2815-gbe06a6f5ff 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jun 26 2024 01:37:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (44) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (49) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (53) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (58) boot: Enabling RNG early entropy source...[0m
+[0;32mI (63) boot: Partition Table:[0m
+[0;32mI (67) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (74) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (82) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (89) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=96d78h (617848) map[0m
+[0;32mI (268) esp_image: segment 1: paddr=000a6da0 vaddr=3ffb0000 size=021cch (  8652) load[0m
+[0;32mI (270) esp_image: segment 2: paddr=000a8f74 vaddr=40080000 size=070a4h ( 28836) load[0m
+[0;32mI (282) esp_image: segment 3: paddr=000b0020 vaddr=400d0020 size=59bech (367596) map[0m
+[0;32mI (377) esp_image: segment 4: paddr=00109c14 vaddr=400870a4 size=04760h ( 18272) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (408) cpu_start: Pro cpu start user code[0m
+[0;32mI (408) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (408) app_init: Application information:[0m
+[0;32mI (411) app_init: Project name:     hello_world[0m
+[0;32mI (417) app_init: App version:      1[0m
+[0;32mI (421) app_init: Compile time:     Jun 26 2024 01:36:58[0m
+[0;32mI (427) app_init: ELF file SHA256:  f36d466da...[0m
+[0;32mI (432) app_init: ESP-IDF:          v5.3-dev-2815-gbe06a6f5ff[0m
+[0;32mI (439) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (443) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (448) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (453) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (460) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (466) heap_init: At 3FFB4BD8 len 0002B428 (173 KiB): DRAM[0m
+[0;32mI (473) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (479) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (485) heap_init: At 4008B804 len 000147FC (81 KiB): IRAM[0m
+[0;32mI (492) spi_flash: detected chip: generic[0m
+[0;32mI (496) spi_flash: flash io: qio[0m
+[0;33mW (500) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (515) main_task: Started on CPU0[0m
+[0;32mI (525) main_task: Calling app_main()[0m
+Failed to allocate tail memory. Requested: 32, available 0, missing: 32
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 64, available 0, missing: 64
+Failed to allocate temp memory. Requested: 40, available 0, missing: 40
+
+abort() was called at PC 0x400e39a9 on core 0
+
+
+Backtrace: 0x40081856:0x3ffb5a40 0x400852d9:0x3ffb5a60 0x4008a1fe:0x3ffb5a80 0x400e39a9:0x3ffb5af0 0x400e3cb2:0x3ffb5b30 0x400e36e1:0x3ffb5b50 0x40125cc7:0x3ffb5b70 0x40125ff1:0x3ffb5b90 0x400dd373:0x3ffb5bb0 0x400d81ad:0x3ffb5c90 0x400d7cac:0x3ffb5cc0 0x400d7492:0x3ffb5cf0 0x400d6a73:0x3ffb5ee0 0x4012959c:0x3ffb5f00
+
+
+
+
+ELF file SHA256: f36d466da
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7524
+load:0x40078000,len:16552
+load:0x40080400,len:4
+load:0x40080404,len:4312
+entry 0x4008065c
+[0;32mI (29) boot: ESP-IDF v5.3-dev-2815-gbe06a6f5ff 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jun 26 2024 01:37:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (44) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (49) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (53) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (58) boot: Enabling RNG early entropy source...[0m
+[0;32mI (63) boot: Partition Table:[0m
+[0;32mI (67) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (74) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (82) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (89) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=96d78h (617848) map[0m
+[0;32mI (268) esp_image: segment 1: paddr=000a6da0 vaddr=3ffb0000 size=021cch (  8652) load[0m
+[0;32mI (270) esp_image: segment 2: paddr=000a8f74 vaddr=40080000 size=070a4h ( 28836) load[0m
+[0;32mI (282) esp_image: segment 3: paddr=000b0020 vaddr=400d0020 size=59bech (367596) map[0m
+[0;32mI (377) esp_image: segment 4: paddr=00109c14 vaddr=400870a4 size=04760h ( 18272) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (408) cpu_start: Pro cpu start user code[0m
+[0;32mI (408) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (408) app_init: Application information:[0m
+[0;32mI (411) app_init: Project name:     hello_world[0m
+[0;32mI (417) app_init: App version:      1[0m
+[0;32mI (421) app_init: Compile time:     Jun 26 2024 01:36:58[0m
+[0;32mI (427) app_init: ELF file SHA256:  f36d466da...[0m
+[0;32mI (432) app_init: ESP-IDF:          v5.3-dev-2815-gbe06a6f5ff[0m
+[0;32mI (439) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (443) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (448) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (453) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (460) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (466) heap_init: At 3FFB4BD8 len 0002B428 (173 KiB): DRAM[0m
+[0;32mI (473) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (479) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (485) heap_init: At 4008B804 len 000147FC (81 KiB): IRAM[0m
+[0;32mI (492) spi_flash: detected chip: generic[0m
+[0;32mI (496) spi_flash: flash io: qio[0m
+[0;33mW (500) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (515) main_task: Started on CPU0[0m
+[0;32mI (525) main_task: Calling app_main()[0m
+Failed to allocate tail memory. Requested: 32, available 0, missing: 32
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 64, available 0, missing: 64
+Failed to allocate temp memory. Requested: 40, available 0, missing: 40
+
+abort() was called at PC 0x400e39a9 on core 0
+
+
+Backtrace: 0x40081856:0x3ffb5a40 0x400852d9:0x3ffb5a60 0x4008a1fe:0x3ffb5a80 0x400e39a9:0x3ffb5af0 0x400e3cb2:0x3ffb5b30 0x400e36e1:0x3ffb5b50 0x40125cc7:0x3ffb5b70 0x40125ff1:0x3ffb5b90 0x400dd373:0x3ffb5bb0 0x400d81ad:0x3ffb5c90 0x400d7cac:0x3ffb5cc0 0x400d7492:0x3ffb5cf0 0x400d6a73:0x3ffb5ee0 0x4012959c:0x3ffb5f00
+
+
+
+
+ELF file SHA256: f36d466da
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7524
+load:0x40078000,len:16552
+load:0x40080400,len:4
+load:0x40080404,len:4312
+entry 0x4008065c
+[0;32mI (29) boot: ESP-IDF v5.3-dev-2815-gbe06a6f5ff 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jun 26 2024 01:37:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (44) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (49) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (53) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (58) boot: Enabling RNG early entropy source...[0m
+[0;32mI (63) boot: Partition Table:[0m
+[0;32mI (67) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (74) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (82) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (89) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=96d78h (617848) map[0m
+[0;32mI (268) esp_image: segment 1: paddr=000a6da0 vaddr=3ffb0000 size=021cch (  8652) load[0m
+[0;32mI (270) esp_image: segment 2: paddr=000a8f74 vaddr=40080000 size=070a4h ( 28836) load[0m
+[0;32mI (282) esp_image: segment 3: paddr=000b0020 vaddr=400d0020 size=59bech (367596) map[0m
+[0;32mI (377) esp_image: segment 4: paddr=00109c14 vaddr=400870a4 size=04760h ( 18272) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (408) cpu_start: Pro cpu start user code[0m
+[0;32mI (408) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (408) app_init: Application information:[0m
+[0;32mI (411) app_init: Project name:     hello_world[0m
+[0;32mI (417) app_init: App version:      1[0m
+[0;32mI (421) app_init: Compile time:     Jun 26 2024 01:36:58[0m
+[0;32mI (427) app_init: ELF file SHA256:  f36d466da...[0m
+[0;32mI (432) app_init: ESP-IDF:          v5.3-dev-2815-gbe06a6f5ff[0m
+[0;32mI (439) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (443) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (448) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (453) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (460) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (466) heap_init: At 3FFB4BD8 len 0002B428 (173 KiB): DRAM[0m
+[0;32mI (473) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (479) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (485) heap_init: At 4008B804 len 000147FC (81 KiB): IRAM[0m
+[0;32mI (492) spi_flash: detected chip: generic[0m
+[0;32mI (496) spi_flash: flash io: qio[0m
+[0;33mW (500) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (515) main_task: Started on CPU0[0m
+[0;32mI (525) main_task: Calling app_main()[0m
+Failed to allocate tail memory. Requested: 32, available 0, missing: 32
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 64, available 0, missing: 64
+Failed to allocate temp memory. Requested: 40, available 0, missing: 40
+
+abort() was called at PC 0x400e39a9 on core 0
+
+
+Backtrace: 0x40081856:0x3ffb5a40 0x400852d9:0x3ffb5a60 0x4008a1fe:0x3ffb5a80 0x400e39a9:0x3ffb5af0 0x400e3cb2:0x3ffb5b30 0x400e36e1:0x3ffb5b50 0x40125cc7:0x3ffb5b70 0x40125ff1:0x3ffb5b90 0x400dd373:0x3ffb5bb0 0x400d81ad:0x3ffb5c90 0x400d7cac:0x3ffb5cc0 0x400d7492:0x3ffb5cf0 0x400d6a73:0x3ffb5ee0 0x4012959c:0x3ffb5f00
+
+
+
+
+ELF file SHA256: f36d466da
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7524
+load:0x40078000,len:16552
+load:0x40080400,len:4
+load:0x40080404,len:4312
+entry 0x4008065c
+[0;32mI (29) boot: ESP-IDF v5.3-dev-2815-gbe06a6f5ff 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jun 26 2024 01:37:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (44) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (49) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (53) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (58) boot: Enabling RNG early entropy source...[0m
+[0;32mI (63) boot: Partition Table:[0m
+[0;32mI (67) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (74) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (82) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (89) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=96d78h (617848) map[0m
+[0;32mI (268) esp_image: segment 1: paddr=000a6da0 vaddr=3ffb0000 size=021cch (  8652) load[0m
+[0;32mI (270) esp_image: segment 2: paddr=000a8f74 vaddr=40080000 size=070a4h ( 28836) load[0m
+[0;32mI (282) esp_image: segment 3: paddr=000b0020 vaddr=400d0020 size=59bech (367596) map[0m
+[0;32mI (377) esp_image: segment 4: paddr=00109c14 vaddr=400870a4 size=04760h ( 18272) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (408) cpu_start: Pro cpu start user code[0m
+[0;32mI (408) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (408) app_init: Application information:[0m
+[0;32mI (411) app_init: Project name:     hello_world[0m
+[0;32mI (417) app_init: App version:      1[0m
+[0;32mI (421) app_init: Compile time:     Jun 26 2024 01:36:58[0m
+[0;32mI (427) app_init: ELF file SHA256:  f36d466da...[0m
+[0;32mI (432) app_init: ESP-IDF:          v5.3-dev-2815-gbe06a6f5ff[0m
+[0;32mI (439) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (443) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (448) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (453) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (460) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (466) heap_init: At 3FFB4BD8 len 0002B428 (173 KiB): DRAM[0m
+[0;32mI (473) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (479) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (485) heap_init: At 4008B804 len 000147FC (81 KiB): IRAM[0m
+[0;32mI (492) spi_flash: detected chip: generic[0m
+[0;32mI (496) spi_flash: flash io: qio[0m
+[0;33mW (500) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (515) main_task: Started on CPU0[0m
+[0;32mI (525) main_task: Calling app_main()[0m
+Failed to allocate tail memory. Requested: 32, available 0, missing: 32
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 64, available 0, missing: 64
+Failed to allocate temp memory. Requested: 40, available 0, missing: 40
+
+abort() was called at PC 0x400e39a9 on core 0
+
+
+Backtrace: 0x40081856:0x3ffb5a40 0x400852d9:0x3ffb5a60 0x4008a1fe:0x3ffb5a80 0x400e39a9:0x3ffb5af0 0x400e3cb2:0x3ffb5b30 0x400e36e1:0x3ffb5b50 0x40125cc7:0x3ffb5b70 0x40125ff1:0x3ffb5b90 0x400dd373:0x3ffb5bb0 0x400d81ad:0x3ffb5c90 0x400d7cac:0x3ffb5cc0 0x400d7492:0x3ffb5cf0 0x400d6a73:0x3ffb5ee0 0x4012959c:0x3ffb5f00
+
+
+
+
+ELF file SHA256: f36d466da
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:7524
+load:0x40078000,len:16552
+load:0x40080400,len:4
+load:0x40080404,len:4312
+entry 0x4008065c
+[0;32mI (29) boot: ESP-IDF v5.3-dev-2815-gbe06a6f5ff 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jun 26 2024 01:37:07[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (44) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (49) boot.esp32: SPI Mode       : QIO[0m
+[0;32mI (53) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (58) boot: Enabling RNG early entropy source...[0m
+[0;32mI (63) boot: Partition Table:[0m
+[0;32mI (67) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (74) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (82) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (89) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=96d78h (617848) map[0m
+[0;32mI (268) esp_image: segment 1: paddr=000a6da0 vaddr=3ffb0000 size=021cch (  8652) load[0m
+[0;32mI (270) esp_image: segment 2: paddr=000a8f74 vaddr=40080000 size=070a4h ( 28836) load[0m
+[0;32mI (282) esp_image: segment 3: paddr=000b0020 vaddr=400d0020 size=59bech (367596) map[0m
+[0;32mI (377) esp_image: segment 4: paddr=00109c14 vaddr=400870a4 size=04760h ( 18272) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (408) cpu_start: Pro cpu start user code[0m
+[0;32mI (408) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (408) app_init: Application information:[0m
+[0;32mI (411) app_init: Project name:     hello_world[0m
+[0;32mI (417) app_init: App version:      1[0m
+[0;32mI (421) app_init: Compile time:     Jun 26 2024 01:36:58[0m
+[0;32mI (427) app_init: ELF file SHA256:  f36d466da...[0m
+[0;32mI (432) app_init: ESP-IDF:          v5.3-dev-2815-gbe06a6f5ff[0m
+[0;32mI (439) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (443) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (448) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (453) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (460) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (466) heap_init: At 3FFB4BD8 len 0002B428 (173 KiB): DRAM[0m
+[0;32mI (473) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (479) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (485) heap_init: At 4008B804 len 000147FC (81 KiB): IRAM[0m
+[0;32mI (492) spi_flash: detected chip: generic[0m
+[0;32mI (496) spi_flash: flash io: qio[0m
+[0;33mW (500) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (515) main_task: Started on CPU0[0m
+[0;32mI (525) main_task: Calling app_main()[0m
+Failed to allocate tail memory. Requested: 32, available 0, missing: 32
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
+Failed to allocate tail memory. Requested: 36, available 4294967284, missing: 48
